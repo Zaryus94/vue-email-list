@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,21 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="js/app.js"></script>
     <title>Vue-Email-List</title>
+
 </head>
 
+
 <body>
+
+    <div id="app">
+        <div v-if="emailArray.length === nLoop">
+
+            <ul>
+                <li v-for="email in emailArray">{{email}}</li>
+            </ul>
+
+        </div>
+    </div>
 
 </body>
 
